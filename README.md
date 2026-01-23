@@ -1,43 +1,24 @@
 # AI-Risk-Fraud-Intelligence-Platform
-AI Risk &amp; Fraud intelligence platform is a project created for my Data Science, Analytics and Artificial Inteligence Masters Degree. Its scope is to implement an end-to-end AI system that detects, scores, explains, and monitors suspicious financial activity using machine learning, anomaly detection, and deep learning techniques.(Built in Databricks)
-
-# Project Overview
-
-The AI Risk & Fraud Intelligence Platform is an end-to-end (production-inspired) machine learning system built entirely on Databricks Lakehouse architecture to detect, score, explain, and monitor suspicious financial transactions.
-
-The platform combines:
-
-* Supervised learning for known fraud patterns
-  
-* Anomaly detection for emerging and zero-day fraud
-
-* Deep learning for sequential behavioral modeling
-
-* Explainable AI (XAI) for regulatory transparency
-
-* Monitoring & drift detection for long-term reliability
-
-This project uses similar structures that modern fintech companies and digital banks implement for fraud detection systems leveraging distributed data processing and ML pipelines.
-
+AI Risk &amp; Fraud intelligence platform is a project created for my Data Science, Analytics and Artificial Inteligence Masters Degree. Its scope is to implement an AI system that detects, scores, explains, and monitors suspicious financial activity using machine learning, anomaly detection, and deep learning techniques. It will be built in Databricks, leveraging its capabilities.
 
 # Project Objectives
 
-* Build a fintech AI system using Databricks
+* I aim to build a fintech AI system using Databricks
 
 * Integrate multiple real-world fraud datasets into a unified Lakehouse schema
 
-* Implement a hybrid detection engine (XGBoost + Random Forest + LSTM/Autoencoder)
+* Put into practice my Master's knowledge by implementing a hybrid detection engine which integrates models such as XGBoost, Random Forest, and a combination of LSTM with Autoencoder.
 
-* Deliver transparent risk scoring and explanations
+* Provide to final users a transparent risk scoring with detailed explanations
 
-* Simulate production monitoring & model governance
+* Simulate production monitoring & model governance as it is usually used in real fintechs.
 
 
-# System Architecture (Databricks Lakehouse)
+# System Architecture
 
 The platform follows a layered Lakehouse architecture:
 
-# 1. Data Ingestion Layer (Bronze)
+# 1. Data Ingestion Layer
 
 * Raw dataset ingestion into Delta Tables
 
@@ -45,7 +26,7 @@ The platform follows a layered Lakehouse architecture:
 
 * Metadata logging
 
-# 2. Data Processing Layer (Silver)
+# 2. Data Processing Layer
 
 * Cleaning & normalization
 
@@ -55,7 +36,7 @@ The platform follows a layered Lakehouse architecture:
 
 * Missing value handling
 
-# 3. Feature Store Layer (Gold)
+# 3. Feature Store Layer
 
 * Transaction-level features
 
@@ -96,9 +77,9 @@ The platform follows a layered Lakehouse architecture:
 
 # Data Ecosystem
 
-The platform integrates four complementary datasets:
+Considering available and valuable online sources, this platform integrates four complementary datasets:
 
-1. PaySim (Mobile Money Transactions):
+PaySim (Mobile Money Transactions):
 
 * High-volume transaction simulation
 
@@ -108,7 +89,7 @@ The platform integrates four complementary datasets:
 
 * Sequence modeling
 
-2. Bank Account Fraud Dataset (NeurIPS 2022)
+Bank Account Fraud Dataset (NeurIPS 2022)
 
 * Account-level fraud patterns
 
@@ -116,13 +97,13 @@ The platform integrates four complementary datasets:
 
 * Account takeover modeling
 
-3. Financial Transactions Dataset
+Financial Transactions Dataset
 
 * Merchant & channel diversity
 
 * Supervised baseline training
 
-4. IEEE-CIS Fraud Detection Dataset
+IEEE-CIS Fraud Detection Dataset
 
 * Device fingerprinting
 
@@ -130,7 +111,6 @@ The platform integrates four complementary datasets:
 
 * Robust generalization testing
 
-All datasets are stored and processed as Delta Lake tables within Databricks.
 
 # Tech Stack 
 
