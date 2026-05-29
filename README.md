@@ -186,7 +186,7 @@ Monitoring & MLOps
 
 * Drift detection using statistical tests
 
-
+```text
 # Repository Structure
 
 ├── data/
@@ -223,6 +223,7 @@ Monitoring & MLOps
 │
 ├── requirements.txt
 └── README.md
+```
 
 # Author
 
